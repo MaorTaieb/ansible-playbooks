@@ -1,0 +1,9 @@
+---
+- name: Check Ping
+  hosts: list1
+  gather_facts: false
+  become: false
+
+  tasks:
+  - name: Pinging Host
+    action: ping
